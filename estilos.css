@@ -25,6 +25,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  z-index: 999;
 }
 
 /*    */
@@ -217,21 +218,21 @@ button {
   margin-left: 1%;
   width: 2.5%;
   height: 5%;
-  position: fixed;
+  position: absolute;
   z-index: 2;
 }
 
 #slice-izquierdo {
   margin-top: -20%;
-  margin-left: 97%;
+  margin-left: 93%;
   width: 2.5%;
   height: 5%;
-  position: fixed;
+  position: absolute;
   z-index: 2;
 }
 
 .img-slice {
-  width: 100%;
+  width: 200%;
   height: auto;
 }
 
@@ -272,7 +273,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6%;
+  margin-top: 5%;
   width: 50%;
   height: 45%;
   border: 2px solid rgb(5, 5, 5);
@@ -287,3 +288,69 @@ button {
 #figura1 img {
   width: 3%;
 }
+/*    */
+/**** ZONA DE  PAGINA 2 BLOGS    */
+/*    */
+#blogs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea cuatro columnas de tamaño igual */
+    grid-gap: 5px; /* Espacio entre las imágenes */
+margin-top: 5%;
+    height: 830px;
+    border-radius: 0 0 25px 0;
+    z-index: 0;
+  }
+  
+  .img-blogs {
+    margin-left: 10%;
+    width: 85%;
+    height: auto;
+    text-align: center;
+    border: 1px solid black;
+  }
+/*    */
+/**** ZONA DE  footer    */
+/*    */
+#footer {
+  top:-40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 0;
+    }
+  
+  #footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 45px;
+    background-color: #343232;
+    border-radius: 40px 0 40px 0;
+  }
+  
+  .footer1-hijo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    width: 30%;
+    color: white;
+    height: 300px;
+    margin-top: 50px;
+  }
+  .footer1-hijo p {
+    color: white;
+  }
+  #redesS {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 100px;
+  }
+  
+  #revista {
+    width: 50%;
+  }
+  
